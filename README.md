@@ -1,83 +1,103 @@
 # python-basic-25BCON2159s
-# 🐍 Python Basics
+# 🐍 Fibonacci Series Generator in Python
 
-Welcome to my Python Basics repository! This repository contains Python programs and practice exercises created to build a strong foundation in programming.
+## 📌 Overview
 
-## 📌 About
+This project demonstrates how to generate the Fibonacci series using Python. It uses a `for` loop to print the first `n` terms of the sequence, where each term is the sum of the two preceding terms.
 
-This project represents my journey of learning Python as a Computer Science and Engineering student. It focuses on understanding basic programming concepts through hands-on practice.
+## 🚀 Features
 
-## 🎯 Objectives
-
-- Learn Python syntax and fundamentals.
-- Understand variables, data types, and operators.
-- Practice conditional statements and loops.
-- Develop logical thinking and problem-solving skills.
-- Build a foundation for advanced Python programming.
+- Simple and beginner-friendly Python code.
+- Generates the Fibonacci series using an iterative approach.
+- Demonstrates loops, variables, and arithmetic operations.
+- Allows easy modification of the number of terms.
+- Helps understand basic programming logic.
 
 ## 🛠️ Technologies Used
 
-- Python 3
-- Git
-- GitHub
+- **Programming Language:** Python 3
+- **Platform:** Google Colab / Python IDE
 
-## 🚀 Getting Started
+## 📂 Code
 
-### Prerequisites
+```python
+n = 10
+a = 0
+b = 1
 
-Install Python 3 from the [official Python website](https://www.python.org/downloads/).
-
-### Installation
-
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/AkshanshSharma0706/python-basic-25BCON2159s.git
+for i in range(n):
+    print(a, end=" ")
+    next_term = a + b
+    a = b
+    b = next_term
 ```
 
-**2. Open the project directory**
+## 🧠 How It Works
 
-```bash
-cd python-basic-25BCON2159s
+1. **Initialize the number of terms:** Set `n = 10` to generate the first ten terms.
+2. **Initialize the first two terms:** Set `a = 0` and `b = 1`.
+3. **Iterate using a loop:** The `for` loop executes `n` times.
+4. **Print the current term:** Print the value of `a`.
+5. **Calculate the next term:** Add `a` and `b` and store the result in `next_term`.
+6. **Update the variables:** Assign `b` to `a` and `next_term` to `b` to generate the next terms.
+
+## ▶️ Example Output
+
+```text
+0 1 1 2 3 5 8 13 21 34
 ```
 
-**3. Run a Python program**
+## 📖 Mathematical Concept
 
-```bash
-python filename.py
-```
+The Fibonacci series is a sequence in which each number is the sum of the two preceding numbers, starting with `0` and `1`.
 
-Replace `filename.py` with the name of the Python file you want to execute.
+The sequence begins as follows:
 
-## 📚 Topics for Practice
+\[
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, \ldots
+\]
 
-- Variables and data types
-- Input and output
-- Operators
-- Conditional statements
-- Loops
-- Functions
-- Lists, tuples, sets, and dictionaries
-- String manipulation
-- Basic coding problems
+The recurrence relation is:
 
-*Update this list to reflect the topics actually present in the repository.*
+\[
+F(n) = F(n-1) + F(n-2)
+\]
+
+With the initial terms:
+
+\[
+F(0) = 0,\qquad F(1) = 1
+\]
+
+## ⚙️ How to Run
+
+1. Clone or download the repository.
+2. Open the Python file in Google Colab or any Python IDE.
+3. Run the program.
+4. Change the value of `n` to generate a different number of terms.
+
+## 🔮 Possible Improvements
+
+- Accept the number of terms as user input.
+- Validate input to ensure the number of terms is non-negative.
+- Implement the Fibonacci series using recursion.
+- Compare iterative and recursive approaches.
+
+## ⏱️ Complexity Analysis
+
+- **Time Complexity:** \(O(n)\), because the loop runs `n` times.
+- **Space Complexity:** \(O(1)\), because only a constant number of variables are used.
 
 ## 👨‍💻 Author
 
 **Akshansh Sharma**
 
-Computer Science and Engineering Student
+## 📄 License
 
-- GitHub Profile: [AkshanshSharma0706](https://github.com/AkshanshSharma0706)
-- Repository: [Python Basics](https://github.com/AkshanshSharma0706/python-basic-25BCON2159s)
-
-## 🌱 Learning Journey
-
-This repository will grow as I continue practicing Python, exploring new concepts, and improving my programming skills.
+This project is intended for educational purposes and for learning fundamental Python programming concepts.
 
 ---
 
-⭐ If you find this repository useful, consider giving it a star!
+⭐ If you find this project useful, consider giving the repository a star!
 
 *Keep learning. Keep coding.*
